@@ -52,7 +52,7 @@ wireframe link: https://docs.google.com/presentation/d/1uWek8_QDQBBwHtzBDKJFBN2c
 
 
 ## Prototype
-Our first week prototype will be a rough draft of our final product. In this rough draft we will aim to have the API's functioning so the service can be used, as well as some basic layout design completed. We are planning to get the service up and running and then focus on all the smaller design details. The prototype will have a place to enter your location, it will run your location in the API and give you all the results for mental health facilities in your area along with a map showing you where they are in relation to you.
+Our first week prototype will be a rough draft of our final product. In this rough draft we will aim to have the API's functioning so the service can be used, as well as some basic layout design completed. We are planning to get the service up and running and then focus on all the smaller design details.
 
 
 ## First Tasks
