@@ -22,7 +22,7 @@ Make it simple, easy to access
 mental health crisis, housing/shelter, urgent care
 
 //PROPOSAL will be done in a readme
-//Mallory is responsible for WireFraming
+//Mallory is responsible for WireFraming, wireframe link: https://docs.google.com/presentation/d/1uWek8_QDQBBwHtzBDKJFBN2cIFJG738GGj8glixdfdo/edit?usp=sharing
 //Christian would like to look into APis
 //Russ wrote the description/ title
 //Sam can type up tasks and set up Repo
@@ -37,6 +37,9 @@ Acceptance Criteria
 //
 
 Aspects of the page that is needed at bottom
-//support/contact
+//support
+//contact
 //about
-//
+
+Notes
+Light blue, teal, turquoise, beige, sand, is associated with health, healing, tranquility, understanding, and softness.
