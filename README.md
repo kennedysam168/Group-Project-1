@@ -1,4 +1,4 @@
-Hygieia
+Canta
 
 <!-- # Proposal Guide
 ## Title "Hygieia"
