@@ -2,22 +2,23 @@ body {
   background-color: lightgoldenrodyellow;
   font-family: "Oswald", sans-serif;
   color: black;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #search-area {
   display: inline-flex;
-  flex-direction: row;
 }
 
 header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-
-h2 {
-  margin-top: auto;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-decoration: underline;
 }
 
 ::-webkit-input-placeholder {
@@ -26,15 +27,15 @@ h2 {
 
 .container {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 20px;
 }
 
 .container2 {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 p {
   text-align: center;
-  margin-top: 95px;
+  margin-top: 10px;
 }
