@@ -9,10 +9,6 @@ body {
   flex-direction: row;
 }
 
-<<<<<<< HEAD
-#search-result {
-  opacity: 0;
-=======
 header {
   text-align: center;
 }
@@ -36,11 +32,9 @@ h2 {
 
 .container2 {
   margin-top: 30px;
-  
 }
 
 p {
   text-align: center;
   margin-top: 95px;
->>>>>>> 82d83d40c00e8ab43ba191bb4ef1bcd899e4b5b0
 }
