@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/uikit.min.css">
-    <link rel="stylesheet" href="assets/css/uikit-rtl.css">
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/uikit-rtl.css" />
     <link rel="stylesheet" href="assets/style.css" />
-    <script src="assets/js/uikit.min.js" ></script>
+    <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Canta</title>
   </head>
   <body>
-    <div>
-        <form class="uk-search">
-            <input class="uk-search-input" type="search" placeholder="">
-        </form>
-        <p uk-margin>
-            <a class="uk-button uk-button-default" href="#">Link</a>
-            <button class="uk-button uk-button-default">Button</button>
-            <button class="uk-button uk-button-default" disabled>Disabled</button>
-        </p>
-        <div class="uk-container uk-container-xsmall">yo</div>
+      <header>
 
-        <div class="uk-container uk-container-small">yoyoyo</div>
-
-        <div class="uk-container uk-container-large">yoyoyo</div>
-
-        <div class="uk-container uk-container-xlarge">yoyoyo</div>
-
-        <div class="uk-container uk-container-expand">yoyoyo</div>
-
-        <div class="uk-inline">
-            <button class="uk-button uk-button-default" type="button">Hover</button>
-            <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <h1 class="uk-heading-large"> <img src="Canta.png" alt="logo img" width="270" height="250"></h1>
+        <div class="uk-container uk-container-xsmall">
+          A medical services locator
         </div>
-        
-        <div class="uk-inline">
-            <button class="uk-button uk-button-default" type="button">Click</button>
-            <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-        </div>
-        
-    </div>
+      </header>
+
+      <form id="search-area" class="uk-search">
+        <input
+          class="uk-search-input"
+          type="search"
+          placeholder="Search Here..."
+        />
+        <button id="searchBtn" class="uk-button-default">Button</button>
+      </form>
+      <div id="search-result" class="uk-container">
+        We will not exist We will not exist We will not exist We will not exist
+        We will not exist
+      </div>
+
+       
+      </header>
+    
+      <!-- <p uk-margin>
+        <a class="uk-button uk-button-default" href="#">About us</a>
+      </p> -->
+   
+    </section>
+    
   </body>
   <script src="assets/script.js"></script>
 </html>

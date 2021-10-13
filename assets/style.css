@@ -1,3 +1,40 @@
 body {
-    background-color: aqua;
+  background-color: lightgoldenrodyellow;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
+#search-area {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  margin-top: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 20px;
+}
+
+.container2 {
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+  margin-top: 95px;
 }
