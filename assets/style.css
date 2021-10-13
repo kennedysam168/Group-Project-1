@@ -4,7 +4,11 @@ body {
   color: black;
 }
 
-#search-btn {
+#search-area {
   display: inline-flex;
   flex-direction: row;
+}
+
+#search-result {
+  opacity: 0;
 }
