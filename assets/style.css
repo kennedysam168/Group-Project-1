@@ -4,9 +4,6 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-body {
   background-color: lightgoldenrodyellow;
   font-family: "Oswald", sans-serif;
   color: black;
@@ -28,4 +25,14 @@ header {
 
 .container2 {
   margin-top: 10px;
+}
+
+#search-result {
+  padding: 10px;
+  margin: 10px;
+}
+
+#searchBtn {
+  padding: 10px 15px;
+  margin: 10px;
 }
