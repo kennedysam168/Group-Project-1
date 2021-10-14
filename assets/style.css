@@ -27,12 +27,9 @@ header {
   margin-top: 10px;
 }
 
-#search-result {
-  padding: 10px;
-  margin: 10px;
-}
-
-#searchBtn {
-  padding: 10px 15px;
-  margin: 10px;
+#map {
+  height: 50vh;
+  width: 50vh;
+  display: inline-flex;
+  align-items: center;
 }
