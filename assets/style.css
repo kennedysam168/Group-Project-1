@@ -1,7 +1,4 @@
-body {
-  background-color: lightgoldenrodyellow;
-  font-family: "Oswald", sans-serif;
-  color: black;
+html {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -9,15 +6,13 @@ body {
   text-align: center;
 }
 
-#search-area {
-  display: inline-flex;
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: "Oswald", sans-serif;
+  color: black;
 }
 
 header {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -35,7 +30,6 @@ header {
   margin-top: 10px;
 }
 
-p {
-  text-align: center;
-  margin-top: 10px;
+#search-result {
+  opacity: 0;
 }
