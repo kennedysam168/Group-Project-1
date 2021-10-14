@@ -29,3 +29,10 @@ header {
 .container2 {
   margin-top: 10px;
 }
+
+#map {
+  height: 50vh;
+  width: 50vh;
+  display: inline-flex;
+  align-items: center;
+}
