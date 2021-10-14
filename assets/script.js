@@ -1,5 +1,6 @@
 console.log("I work!");
 
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hyaXN0aWFuYW50aSIsImEiOiJja3VxNmhlc2Eyd2lrMnVvZjAyMDRtemVqIn0.Ml5z5JIn9PNbYQqRnQOcFQ';
 
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
@@ -37,3 +38,28 @@ function setupMap(center) {
 //   container: 'map',
 //   style: 'mapbox://styles/mapbox/streets-v11'
 // });
+
+
+var sBtn = document.getElementById("searchBtn");
+var searchResults = document.getElementById("search-result")
+
+// function sBtn() {
+//     // console.log("clicked")
+//     document.querySelectorAll("search-result").style.transition = "all 2s ease-in-out";
+//     document.querySelectorAll("search-result").style.opacity = 1;
+
+//     sBtn.addEventListener('click', sBtn());
+//     console.log("search button works")
+// }
+
+// sBtn.addEventListener('click', sBtn());
+
+searchResults.style.display = "none";
+sBtn.addEventListener("click", search());
+
+function search(){
+    searchResults.style.display = "block";
+    console.log("search works")
+}
+    
+

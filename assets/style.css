@@ -1,23 +1,19 @@
+html {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 body {
   background-color: lightgoldenrodyellow;
   font-family: "Oswald", sans-serif;
   color: black;
 }
 
-#search-btn {
-  display: inline-flex;
-  flex-direction: row;
-}
-
 header {
   text-align: center;
-}
-
-h2 {
-  margin-top: auto;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-decoration: underline;
 }
 
 ::-webkit-input-placeholder {
@@ -26,18 +22,12 @@ h2 {
 
 .container {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 20px;
 }
 
 .container2 {
-  margin-top: 30px;
-  
-}
-
-p {
-  text-align: center;
-  margin-top: 95px;
+  margin-top: 10px;
 }
 
 #map {
