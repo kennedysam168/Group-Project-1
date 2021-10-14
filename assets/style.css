@@ -39,3 +39,10 @@ p {
   text-align: center;
   margin-top: 95px;
 }
+
+#map {
+  height: 50vh;
+  width: 50vh;
+  display: inline-flex;
+  align-items: center;
+}
