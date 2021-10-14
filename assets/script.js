@@ -2,7 +2,7 @@ console.log("I work!");
 
 
 var sBtn = document.getElementById("searchBtn");
-var searchResults = document.getElementById("search-result")
+var searchResults = document.getElementById("search-result");
 
 // function sBtn() {
 //     // console.log("clicked")
@@ -15,11 +15,11 @@ var searchResults = document.getElementById("search-result")
 
 // sBtn.addEventListener('click', sBtn());
 
-searchResults.style.display = "none";
-sBtn.addEventListener("click", search());
+// searchResults.style.display = "none";
+sBtn.addEventListener("click", search);
 
 function search(){
-    searchResults.style.display = "block";
+    // searchResults.style.display = "block";
     console.log("search works")
 }
     
