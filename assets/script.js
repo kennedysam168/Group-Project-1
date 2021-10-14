@@ -15,11 +15,10 @@ var searchResults = document.getElementById("search-result");
 
 // sBtn.addEventListener('click', sBtn());
 
-// searchResults.style.display = "none";
+
 sBtn.addEventListener("click", search);
 
 function search(){
-    // searchResults.style.display = "block";
     console.log("search works")
 }
     
