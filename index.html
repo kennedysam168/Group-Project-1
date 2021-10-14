@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' /> 
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <link rel="stylesheet" href="assets/css/uikit-rtl.css" />
     <link rel="stylesheet" href="assets/style.css" />
@@ -22,76 +29,43 @@
     <title>Canta</title>
   </head>
   <body>
-      <header>
+    <header>
+      <!-- <h1 class="uk-heading-large">Canta</h1> -->
+      <!-- changed name to logo -->
+      <img src="Canta.png" alt="logo img" width="270" height="250" />
+      <h2 class="uk-container uk-container-small">A medical location helper</h2>
+    </header>
 
-        <!-- <h1 class="uk-heading-large">Canta</h1> -->
-        <!-- changed name to logo -->
-        <img src="Canta.png" alt="logo img" width="270" height="250">
-        <h2 class="uk-container uk-container-small">
-          A medical location helper
-        </h2>
-      </header>
-     
-      <section class="container">
+    <section class="container">
       <form id="search-btn" class="uk-search">
-        <input class="uk-search-input" type="search" placeholder="enter location" size="40"/>
+        <input
+          class="uk-search-input"
+          type="search"
+          placeholder="enter location"
+          size="40"
+        />
         <button class="uk-button uk-button-default">Search</button>
       </form>
 
       <!-- MAP AREA -->
 
-      <div id='map'></div>
-            
+      <div id="map"></div>
+
       <!-- END OF MAP AREA -->
 
-      <div class="container2">
-      <div id="search-result" class="uk-container uk-container-large">
-        We will not exist
-      </div>
-
-      <div id="search-result" class="uk-container uk-container-large">
-        We will not exist
-      </div>
-
-      <div id="search-result" class="uk-container uk-container-large">
-        We will not exist
-      </div>
-
-      <div id="search-result" class="uk-container uk-container-large">
-        We will not exist
-      </div>
-
-      <div id="search-result" class="uk-container uk-container-large">
-        We will not exist
-
-        <h1 class="uk-heading-large"> <img src="Canta.png" alt="logo img" width="200" height="200"></h1></header>
-        <div class="uk-container uk-container-xsmall">
-         <p>A medical services locator</p> 
-          <form id="search-area" class="uk-search">
-            <input
-              class="uk-search-input"
-              type="search"
-              placeholder="Search Here..."
-            />
-            <button id="searchBtn" class="uk-button-default">Search</button>
-          </form>
-        </div>
- 
       <div id="search-result" class="uk-container">
-      <p> We will not exist We will not exist We will not exist We will not exist
-        We will not exist</p> 
-
+        <p>
+          We will not exist We will not exist We will not exist We will not
+          exist We will not exist
+        </p>
       </div>
-    
+
       <p uk-margin>
         <a class="uk-button uk-button-default" href="#">About us</a>
         <a class="uk-button uk-button-default" href="#">Support</a>
         <a class="uk-button uk-button-default" href="#">Donate</a>
       </p>
     </section>
-
-
-    
   </body>
 
   <script src="assets/script.js"></script>
