@@ -4,7 +4,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   font-family: "Oswald", sans-serif;
   color: black;
 }
