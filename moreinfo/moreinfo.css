@@ -12,4 +12,8 @@ body {
 
 ol {
   list-style-type: none;
+  text-align: left;
+  font-size: 24px;
+  max-width: 998px;
+  color: black;
 }
