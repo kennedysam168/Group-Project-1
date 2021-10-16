@@ -33,3 +33,8 @@ header {
   display: inline-flex;
   align-items: center;
 }
+
+#support-body {
+  height: 100vh;
+  width: 100%;
+}
