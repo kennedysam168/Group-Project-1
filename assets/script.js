@@ -40,8 +40,8 @@ function setupMap(center) {
 // });
 
 
-var sBtn = document.getElementById("searchBtn");
-var searchResults = document.getElementById("search-result")
+// var sBtn = document.getElementById("searchBtn");
+// var searchResults = document.getElementById("search-result")
 
 // function sBtn() {
 //     // console.log("clicked")
@@ -54,12 +54,33 @@ var searchResults = document.getElementById("search-result")
 
 // sBtn.addEventListener('click', sBtn());
 
-searchResults.style.display = "none";
-sBtn.addEventListener("click", search());
+
+// searchResult.style.display = "none";
+// sBtn.addEventListener("click", search());
 
 function search(){
     searchResults.style.display = "block";
     console.log("search works")
 }
-    
+  
+// Health API start
 
+$(function (){
+
+    $.ajax({
+        type: 'GET',
+        url: 'https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA',
+        success: function(data){
+            console.log('sucess', data);
+        }
+    })
+
+});
+
+//refer back to week 6 activity 21 for referance 
+
+console.log(testResponse);
+
+function displayHospitals(){
+    
+}
