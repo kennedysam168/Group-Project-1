@@ -6,7 +6,7 @@ html {
   text-align: center;
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   background-repeat: no-repeat;
-
+  height: 100%;
   font-family: "Oswald", sans-serif;
   color: black;
 }
