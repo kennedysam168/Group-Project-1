@@ -55,10 +55,31 @@ var searchResults = document.getElementById("search-result");
 // sBtn.addEventListener('click', sBtn());
 
 
-sBtn.addEventListener("click", search);
-
 function search(){
     console.log("search works")
 }
-    
+  
+// Health API start
 
+var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
+ encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+
+$(function (){
+
+    $.ajax({
+        type: 'GET',
+        url: apiUrl,
+        success: function(data){
+            console.log('sucess', data);
+        }
+    })
+
+});
+
+//refer back to week 6 activity 21 for referance 
+
+console.log(testResponse);
+
+function displayHospitals(){
+    
+}
