@@ -5,6 +5,7 @@ html {
   align-items: center;
   text-align: center;
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  height: 100%;
   font-family: "Oswald", sans-serif;
   color: black;
 }
@@ -17,6 +18,14 @@ header {
   text-align: center;
 }
 
+.uk-section-primary {
+  background-color: burlywood;
+}
+
+.uk-container-large {
+  color: black;
+}
+
 .container {
   text-align: center;
   margin-top: 10px;
@@ -27,9 +36,26 @@ header {
   margin-top: 10px;
 }
 
+.fa-linkedin {
+  color: #0072b1;
+}
+
+.fa-github-square {
+  color: #171515
+}
+
 #map {
   height: 50vh;
   width: 50vh;
   display: inline-flex;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    height: max-content;
+  }
+}
+
+  
+

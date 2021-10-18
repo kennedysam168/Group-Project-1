@@ -60,6 +60,68 @@ sBtn.addEventListener("click", search());
 function search(){
     searchResults.style.display = "block";
     console.log("search works")
-}
+};
+
+// // for github and linkedin on About page
+
+// // Christian
+
+// // github
+// document.getElementById("Christian-github").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+// // linkedin
+// document.getElementById("Christian-linkedin").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+
+// // Mallory
+
+// // github
+// document.getElementById("Mallory-github").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+// // linkedin
+// document.getElementById("Mallory-linkedin").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+
+// // Sam
+
+// // github
+// document.getElementById("Sam-github").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+// // linkedin
+// document.getElementById("Sam-linkedin").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+// }
+
+// // Russ
+
+// // github
+// document.getElementById("Russ-github").addEventListener("click", russGithub());
+
+// function russGithub() {
+//     window.open("https://github.com/rmccallie");
+// }
+// // linkedin
+// document.getElementById("Russ-linkedin").addEventListener("click", myFunction);
+
+// function myFunction() {
+//     window.open(url);
+
     
 
