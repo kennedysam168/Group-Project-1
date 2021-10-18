@@ -22,16 +22,16 @@ function setupMap(center) {
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
         zoom: 13
-      });
+    });
 
-      const nav = new mapboxgl.NavigationControl();
-      map.addControl(nav, 'bottom-left');
+    const nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'bottom-left');
 
-      var directions = new MapboxDirections({
+    var directions = new MapboxDirections({
         accessToken: 'pk.eyJ1IjoiY2hyaXN0aWFuYW50aSIsImEiOiJja3VxNmhlc2Eyd2lrMnVvZjAyMDRtemVqIn0.Ml5z5JIn9PNbYQqRnQOcFQ',
-      });
-      
-      map.addControl(directions, 'top-left');
+    });
+
+    map.addControl(directions, 'top-left');
 }
 
 // var map = new mapboxgl.Map({
@@ -57,71 +57,9 @@ var searchResults = document.getElementById("search-result")
 searchResults.style.display = "none";
 sBtn.addEventListener("click", search());
 
-function search(){
-    searchResults.style.display = "block";
+function search() {
+    searchResults.style.display = "all";
     console.log("search works")
-};
+}
 
-// // for github and linkedin on About page
-
-// // Christian
-
-// // github
-// document.getElementById("Christian-github").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-// // linkedin
-// document.getElementById("Christian-linkedin").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-
-// // Mallory
-
-// // github
-// document.getElementById("Mallory-github").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-// // linkedin
-// document.getElementById("Mallory-linkedin").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-
-// // Sam
-
-// // github
-// document.getElementById("Sam-github").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-// // linkedin
-// document.getElementById("Sam-linkedin").addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-// }
-
-// // Russ
-
-// // github
-// document.getElementById("Russ-github").addEventListener("click", russGithub());
-
-// function russGithub() {
-//     window.open("https://github.com/rmccallie");
-// }
-// // linkedin
-// document.getElementById("Russ-linkedin").addEventListener("click", myFunction);
-
-// function myFunction() {
-//     window.open(url);
-
-    
 
