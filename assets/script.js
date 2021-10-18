@@ -40,8 +40,8 @@ function setupMap(center) {
 // });
 
 
-// var sBtn = document.getElementById("searchBtn");
-// var searchResults = document.getElementById("search-result")
+var sBtn = document.getElementById("searchBtn");
+var searchResults = document.getElementById("search-result");
 
 // function sBtn() {
 //     // console.log("clicked")
@@ -55,21 +55,20 @@ function setupMap(center) {
 // sBtn.addEventListener('click', sBtn());
 
 
-// searchResult.style.display = "none";
-// sBtn.addEventListener("click", search());
-
 function search(){
-    searchResults.style.display = "block";
     console.log("search works")
 }
   
 // Health API start
 
+var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
+ encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+
 $(function (){
 
     $.ajax({
         type: 'GET',
-        url: 'https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA',
+        url: apiUrl,
         success: function(data){
             console.log('sucess', data);
         }
