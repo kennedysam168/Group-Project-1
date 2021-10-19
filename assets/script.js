@@ -22,16 +22,16 @@ function setupMap(center) {
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
         zoom: 13
-      });
+    });
 
-      const nav = new mapboxgl.NavigationControl();
-      map.addControl(nav, 'bottom-left');
+    const nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'bottom-left');
 
-      var directions = new MapboxDirections({
+    var directions = new MapboxDirections({
         accessToken: 'pk.eyJ1IjoiY2hyaXN0aWFuYW50aSIsImEiOiJja3VxNmhlc2Eyd2lrMnVvZjAyMDRtemVqIn0.Ml5z5JIn9PNbYQqRnQOcFQ',
-      });
-      
-      map.addControl(directions, 'top-left');
+    });
+
+    map.addControl(directions, 'top-left');
 }
 
 // var map = new mapboxgl.Map({
@@ -41,7 +41,7 @@ function setupMap(center) {
 
 
 var sBtn = document.getElementById("searchBtn");
-var searchResults = document.getElementById("search-result");
+var searchResults = document.getElementById("search-result")
 
 // function sBtn() {
 //     // console.log("clicked")
@@ -54,8 +54,11 @@ var searchResults = document.getElementById("search-result");
 
 // sBtn.addEventListener('click', sBtn());
 
+searchResults.style.display = "none";
+sBtn.addEventListener("click", search());
 
-function search(){
+function search() {
+    searchResults.style.display = "all";
     console.log("search works")
 }
   
@@ -82,8 +85,5 @@ $(function (){
 
 //refer back to week 6 activity 21 for referance 
 
-console.log(testResponse);
 
-function displayHospitals(){
-    
-}
+
