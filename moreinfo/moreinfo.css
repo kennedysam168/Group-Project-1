@@ -15,10 +15,14 @@ body {
 }
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-li:hover {
+a:hover {
   cursor: pointer;
-  transform: scale(1.01);
+  transform: scale(1.1);
 }
