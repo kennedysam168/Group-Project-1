@@ -58,21 +58,21 @@ searchResults.style.display = "none";
 sBtn.addEventListener("click", search());
 
 function search() {
-    searchResults.style.display = "all";
+    searchResults.style.display = "block";
     console.log("search works")
 }
-  
+
 // Health API start
 
 var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
- encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+    encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
 
-$(function (){
+$(function () {
 
     $.ajax({
         type: 'GET',
         url: apiUrl,
-        success: function(data){
+        success: function (data) {
             console.log('sucess', data);
         }
     })
@@ -81,9 +81,4 @@ $(function (){
 
 // apend child to add in the search results 
 
-
-
 //refer back to week 6 activity 21 for referance 
-
-
-
