@@ -106,7 +106,8 @@ $(function () {
     });
 
 
-    // this was to attempt to pull data from the api array based on what was searched but cant get it to work.
+    // this was to attempt to pull data from the api array based on what was
+    // searched but cant get it to work.
 
     const searchBar = document.getElementById('search-bar');
     console.log(searchBar)

@@ -1,17 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  display: inline-flex;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff);
+  background-repeat: no-repeat;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-  background-repeat: no-repeat;
-  height: 100vh;
-  font-family: "Oswald", sans-serif;
-  color: black;
 }
 
-header {
+b header {
   text-align: center;
 }
 
