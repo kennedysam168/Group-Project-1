@@ -43,12 +43,17 @@
     <section class="container">
       <form id="search-btn" class="uk-search">
         <input
+          id="searchInput"
           class="uk-search-input"
+          id="search-bar"
           type="search"
           placeholder="enter location"
           size="40"
         />
-        <button class="uk-button uk-button-default">Search</button>
+
+        <button id="searchBtn" class="uk-button uk-button-default">
+          Search
+        </button>
       </form>
     </section>
     <section>
@@ -58,23 +63,19 @@
 
       <!-- END OF MAP AREA -->
 
-      <div id="search-result" class="uk-container">
-        <h3>
-          We will not exist We will not exist We will not exist We will not
-          exist We will not exist
-        </h3>
-      </div>
+      <ul id="search-result" class="uk-container"></ul>
 
       <p uk-margin>
-        <a class="uk-button uk-button-default" href="/about.html">About us</a>
-        <a class="uk-button uk-button-default" href="./support.html">Support</a>
+        <a class="uk-button uk-button-default" href="./about.html">About us</a>
+        <a class="uk-button uk-button-default" href="./supportpage/support.html"
+          >Support</a
+        >
         <a class="uk-button uk-button-default" href="moreinfo/moreinfo.html"
-          >More info</a
+          >Resources</a
         >
       </p>
     </section>
   </body>
 
-  <script src="assets/testdata.js"></script>
   <script src="assets/script.js"></script>
 </html>
