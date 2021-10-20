@@ -1,7 +1,6 @@
 html {
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 body {
@@ -12,9 +11,11 @@ body {
   font-family: "Oswald", sans-serif;
   color: black;
   font-size: 20px;
+  height: 100vh;
 }
 ul {
   list-style-type: none;
+  padding-bottom: 10px;
 }
 
 a {

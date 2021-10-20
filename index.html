@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Canta</title>
   </head>
 
@@ -43,11 +44,12 @@
       <form id="search-btn" class="uk-search">
         <input
           class="uk-search-input"
+          id="search-bar"
           type="search"
           placeholder="enter location"
           size="40"
         />
-        <button class="uk-button uk-button-default">Search</button>
+        <button id="searchBtn" class="uk-button uk-button-default">Search</button>
       </form>
     </section>
     <section>
@@ -57,18 +59,15 @@
 
       <!-- END OF MAP AREA -->
 
-      <div id="search-result" class="uk-container">
-        <p>
-          We will not exist We will not exist We will not exist We will not
-          exist We will not exist
-        </p>
-      </div>
+      <ul id="search-result" class="uk-container">
+      
+      </ul>
 
       <p uk-margin>
-        <a class="uk-button uk-button-default" href="aboutpage/about.html"
+        <a class="uk-button uk-button-default" href="./about.html"
           >About us</a
         >
-        <a class="uk-button uk-button-default" href="#">Support</a>
+        <a class="uk-button uk-button-default" href="./supportpage/support.html">Support</a>
         <a class="uk-button uk-button-default" href="moreinfo/moreinfo.html"
           >Resources</a
         >
