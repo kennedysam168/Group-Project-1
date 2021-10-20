@@ -48,3 +48,14 @@ Light blue, teal, turquoise, beige, sand, is associated with health, healing, tr
 ## Issues Faced
 
 During the building of this webpage we faced many challenges. The most taxing challenge we faced was integration of the API'S. We first struggled with getting the open map API to display on the screen, but were able to solve it by reading documentation and figuring out what functions to create and then applying data given by the API into those functions to allow it to display. We then had a hard time with our second API which gives hospital locations for major cities. During the set up we ran into cors problems and our instructor needed to create a proxy to run the API through to get around the cors. Once we were able to call the API and get the data from it we then used JSON.parse to allow the data to be retrieved and allowed certain pieces of data like city and street address to be displayed for each hospital. As we continue to learn more we will continue to improve upon these features and the website as a whole.
+
+
+## API's 
+
+We used two API's for this project:
+
+https://docs.mapbox.com/api/overview/
+This allowed up to display the interactive map
+
+https://www.communitybenefitinsight.org/?page=info.data_api
+This allowed us to show the addresses of the hospitals below the map
