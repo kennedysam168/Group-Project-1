@@ -64,6 +64,17 @@ var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
  encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state")
 
 $(function(){
+function search() {
+    searchResults.style.display = "block";
+    console.log("search works")
+}
+
+// Health API start
+
+var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
+    encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+
+$(function () {
 
     $.ajax({
         type: 'GET',
@@ -85,6 +96,9 @@ $(function(){
                 searchResults.append(searchResultEl)
         
             }
+      
+        success: function (data) {
+            console.log('sucess', data);
         }
     })
 
