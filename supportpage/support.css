@@ -58,3 +58,8 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
