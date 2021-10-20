@@ -6,7 +6,7 @@ html {
   text-align: center;
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   background-repeat: no-repeat;
-
+  height: 100vh;
   font-family: "Oswald", sans-serif;
   color: black;
 }
@@ -42,7 +42,7 @@ header {
 }
 
 .fa-github-square {
-  color: #171515
+  color: #171515;
 }
 
 #map {
@@ -57,5 +57,3 @@ header {
     height: max-content;
   }
 }
-
-

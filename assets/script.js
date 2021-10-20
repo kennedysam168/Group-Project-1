@@ -52,83 +52,81 @@ $("#searchBtn").click(function () {
     event.preventDefault();
     searchResults.style.display = "all";
     console.log("search button works")
- });
+});
 
 
-  
 
- // Health API start
- // the function returns the 5 hospitals that show on the page and shows their street address, city, and zip
-
-var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
- encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state")
-
-$(function(){
-function search() {
-    searchResults.style.display = "block";
-    console.log("search works")
-}
 
 // Health API start
+// the function returns the 5 hospitals that show on the page and shows their street address, city, and zip
 
 var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
-    encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+    encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state")
 
 $(function () {
+    function search() {
+        searchResults.style.display = "block";
+        console.log("search works")
+    }
 
-    $.ajax({
-        type: 'GET',
-        url: apiUrl,
-        success: function(data){
-            var hospitals =  JSON.parse(data);
-            for (let index = 0; index < 5  ; index++) {
-                let name  = hospitals[index].name;
-                let street = hospitals[index].street_address;
-                let city = hospitals[index].city;
-                let zip = hospitals[index].zip_code;
-                console.log(city)
-                console.log(zip)
-                console.log(street)
-                console.log(name)
-                var searchResultEl = document.createElement('li');
-                searchResultEl.textContent = name + " - " + street + ",  " + city + ",  " + zip;
-                
-                searchResults.append(searchResultEl)
-        
+    // Health API start
+
+    var apiUrl = "https://vast-tor-70335.herokuapp.com/proxy/api/v1?target=" +
+        encodeURIComponent("https://www.communitybenefitinsight.org/api/get_hospitals.php?state=PA")
+
+    $(function () {
+
+        $.ajax({
+            type: 'GET',
+            url: apiUrl,
+            success: function (data) {
+                var hospitals = JSON.parse(data);
+                for (let index = 0; index < 5; index++) {
+                    let name = hospitals[index].name;
+                    let street = hospitals[index].street_address;
+                    let city = hospitals[index].city;
+                    let zip = hospitals[index].zip_code;
+                    console.log(city)
+                    console.log(zip)
+                    console.log(street)
+                    console.log(name)
+                    var searchResultEl = document.createElement('li');
+                    searchResultEl.textContent = name + " - " + street + ",  " + city + ",  " + zip;
+
+                    searchResults.append(searchResultEl)
+
+                }
+
+                success: function Ass(data) {
+                    console.log('sucess', data);
+                }
             }
-      
-        success: function (data) {
-            console.log('sucess', data);
-        }
-    })
+        });
 
+    });
+
+
+    // this was to attempt to pull data from the api array based on what was searched but cant get it to work.
+
+    const searchBar = document.getElementById('search-bar');
+    console.log(searchBar)
+
+    searchBar.addEventListener('keyup', (e) => {
+        const searchString = e.target.value;
+        console.log(e.target.value)
+
+        // const filteredCities = searchResultEl.filter(() => {
+        //     return (
+        //         searchResultEl.toLowerCase().includes(searchString)
+        //     );
+        // });
+        // console.log(filteredCities)
+        // displayCharacters(filteredCities);
+    });
 });
 
 
-// this was to attempt to pull data from the api array based on what was searched but cant get it to work.
-
-const searchBar = document.getElementById('search-bar');
-console.log(searchBar)
-
-searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value;
-    console.log(e.target.value)
-
-    // const filteredCities = searchResultEl.filter(() => {
-    //     return (
-    //         searchResultEl.toLowerCase().includes(searchString)
-    //     );
-    // });
-    // console.log(filteredCities)
-    // displayCharacters(filteredCities);
-});
 
 
-
-
-
-// apend child to add in the search results 
-
-
-
-//refer back to week 6 activity 21 for referance 
+// apend ch
+//refer back to week 6 activity 21 for referance
