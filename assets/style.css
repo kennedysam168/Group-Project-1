@@ -23,12 +23,15 @@ body {
 b header {
   text-align: center;
 }
+li {
+  list-style-type: none;
+}
 
 ::-webkit-input-placeholder {
   text-align: center;
 }
 
-.uk-section-primary { 
+.uk-section-primary {
   background-color: transparent;
   flex-direction: row;
   text-align: left;
