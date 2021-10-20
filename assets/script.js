@@ -76,6 +76,8 @@ $(function (){
 
 });
 
+console.log(data);
+
 // apend child to add in the search results 
 
 
